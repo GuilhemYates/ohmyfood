@@ -159,6 +159,7 @@ header img {
 
 .barre_recherche input {
     border: none;
+    width: 150px;
     font-size: 110%;
     font-weight: 500;
     background-color: unset;
@@ -191,7 +192,7 @@ input::placeholder {
     width: 350px;
     font-size: 110%;
     font-weight: 300;
-    margin: 0px auto 35px auto;
+    margin: 0 auto 35px auto;
 }
 
 .bouton {
@@ -269,7 +270,7 @@ input::placeholder {
 .fonctionnement_logo {
     color: grey;
     padding-top: 5px;
-    margin: 0px 20px 0px 40px;
+    margin: 0 20px 0 40px;
 }
 
 .fonctionnement_logo i {
@@ -420,24 +421,84 @@ footer a {
 
 /*  VERSION TEBLETTE  */
 
-@media all and (min-width: 769px) and (max-width: 992px) {
-    .loader {
-        top: 40%;
+@media all and (min-width: 768px) and (max-width: 992px) {
+    /*  LOCALISATION  */
+
+    .barre_recherche {
+        margin-left: 40%;
     }
 
-    #loaderBloc img {
-        top: 46%;
+    /*  BANIERE  */
+
+    #baniere {
+        padding: 25px 15px 20px 10px;
+    }
+
+    /*  FONCTIONNENMENT  */
+
+    #fonctionnement {
+        margin: 0 20px 20px 20px;
+    }
+
+    .fonctionnement_encarts {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .fonctionnement_encart {
+        width: 40%;
+    }
+
+    /*  RESTAURANTS  */
+
+    .restaurants_encarts {
+        flex-direction: row;
+    }
+
+    .restaurant_encart {
+        width: 48.5%;
     }
 }
 
 /*  VERSION DESKTOP  */
 
-@media all and (min-width: 992px) {
-    .loader {
-        top: 40%;
+@media all and (min-width: 993px) {
+    /*  HEADER  */
+
+    header img {
+        width: 40%;
     }
 
-    #loaderBloc img {
-        top: 48%;
+    /*  LOCALISATION  */
+
+    .barre_recherche {
+        margin-left: 46%;
+    }
+
+    /*  FONCTIONNENMENT  */
+
+    #fonctionnement {
+        margin: 0 20px 20px 20px;
+    }
+
+    .fonctionnement_encarts {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fonctionnement_encart {
+        width: 30%;
+    }
+
+    /*  RESTAURANTS  */
+
+    .restaurants_encarts {
+        flex-direction: row;
+    }
+
+    .restaurant_encart {
+        width: 24%;
     }
 }
