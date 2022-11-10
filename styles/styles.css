@@ -209,7 +209,6 @@ input::placeholder {
     color: white;
     cursor: pointer;
     box-shadow: 3px 3px 5px #c1c1c1;
-    -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
