@@ -2,11 +2,11 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles1.css">
+  <link rel="icon" href="images/logo/ohmyfood.ico">
   <title>À la française - ohmyfood</title>
-  <link rel="icon" href="images/logo/ohmyfood.ico" />
-  <link rel="stylesheet" href="styles/styles1.css" />
   <script src="https://kit.fontawesome.com/2897f175fe.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,21 +14,28 @@
 
   <div class="main">
 
+    <!--  HEADER  -->
+
     <header>
+      <div class="bouton_retour">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
       <div class="header">
-        <a class="bouton_retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
-        <img class="header_logo" src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
+        <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
       </div>
     </header>
 
+    <!--  RESTAURANT  -->
+
     <section>
       <div class="presentation_restaurant">
-        <img class="photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" />
+        <img class="photo" src="images/restaurants/alafrancaise.jpg" alt="À la française">
         <div class="presentation_menu">
           <div class="restaurant">
             <h1>À la française</h1>
             <div class="coeur">
-              <span class="notLiked far fa-heart"></span>
+              <span><i class="fas fa-heart"></i></span>
+              <span><i class="far fa-heart"></i></span>
             </div>
           </div>
           <div class="menu">
@@ -36,22 +43,28 @@
               <h3 class="titre">ENTRÉES</h3>
               <div class="bordure_verte"></div>
               <div class="carte">
-                <div class="description">
-                  <p class="nom">Tartare de poulpe acidulé</p>
-                  <span class="details">Aux zestes d'orange</span>
-                  <span class="prix">25€</span>
+                <div class="apparition0 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Tartare de poulpe acidulé</h4>
+                    <p class="details">Aux zestes d'orange</p>
+                  </div class="nom_details">
+                  <div class="prix"><strong>25€</strong></div>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Velouté de légumes d'antan</p>
-                  <span class="details">Carotte, panais, topinambour</span>
-                  <span class="prix">35€</span>
+                <div class="apparition1 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Velouté de légumes d'antan</h4>
+                    <p class="details">Carotte, panais, topinambour</p>
+                  </div>
+                  <span class="prix"><strong>35€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Soupe à l'oignon</p>
-                  <span class="details">Revisitée</span>
-                  <span class="prix">20€</span>
+                <div class="apparition2 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Soupe à l'oignon</h4>
+                    <p class="details">Revisitée</p>
+                  </div>
+                  <span class="prix"><strong>20€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i>
                   </span>
                 </div>
@@ -61,22 +74,28 @@
               <h3 class="titre">PLATS</h3>
               <div class="bordure_verte"></div>
               <div class="carte">
-                <div class="description">
-                  <p class="nom">Coquilles Saint-Jacques</p>
-                  <span class="details">Accompagnées d'une purée de panais</span>
-                  <span class="prix">40€</span>
+                <div class="apparition3 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Coquilles Saint-Jacques</h4>
+                    <p class="details">Accompagnées d'une purée de panais</p>
+                  </div>
+                  <span class="prix"><strong>40€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Magret de canard</p>
-                  <span class="details">Et parmentier de pommes de terre</span>
-                  <span class="prix">35€</span>
+                <div class="apparition4 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Magret de canard</h4>
+                    <p class="details">Et parmentier de pommes de terre</p>
+                  </div>
+                  <span class="prix"><strong>35€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Pigeonneau d’Ille-et-Vilaine</p>
-                  <span class="details">Sur son lit de gnocchis aux légumes</span>
-                  <span class="prix">44€</span>
+                <div class="apparition5 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Pigeonneau d’Ille-et-Vilaine</h4>
+                    <p class="details">Sur son lit de gnocchis aux légumes</p>
+                  </div>
+                  <span class="prix"><strong>44€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
               </div>
@@ -85,33 +104,44 @@
               <h3 class="titre">DESSERTS</h3>
               <div class="bordure_verte"></div>
               <div class="carte">
-                <div class="description">
-                  <p class="nom">Pétales de violettes glacés</p>
-                  <span class="details">Et purée de noisettes</span>
-                  <span class="prix">18€</span>
+                <div class="apparition6 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Pétales de violettes glacés</h4>
+                    <p class="details">Et purée de noisettes</p>
+                  </div>
+                  <span class="prix"><strong>18€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Fondant au chocolat</p>
-                  <span class="details">Revisité</span>
-                  <span class="prix">22€</span>
-                  <span class="check"><i class="fas fa-check-circle"></i></span>
+                <div class="apparition7 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Fondant au chocolat</h4>
+                    <p class="details">Revisité</p>
+                  </div>
+                  <h4 class="prix"><strong>22€</strong></h4>
+                  <p class="check"><i class="fas fa-check-circle"></i></p>
                 </div>
-                <div class="description">
-                  <p class="nom">Millefeuille croustillant</p>
-                  <span class="details">Myrtilles et pâte d’amande</span>
-                  <span class="prix">23€</span>
+                <div class="apparition8 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Millefeuille croustillant</h4>
+                    <p class="details">Myrtilles et pâte d’amande</p>
+                  </div>
+                  <span class="prix"><strong>23€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!--  BOUTON  COMMANDER  -->
+
         <div class="commander">
-          <span class="bouton_commander">Commander</span>
+          <button class="bouton_commander">Commander</button>
         </div>
       </div>
     </section>
+
+    <!--  FOOTER  -->
 
     <footer>
       <p>ohmyfood</p>

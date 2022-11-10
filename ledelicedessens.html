@@ -2,11 +2,11 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles1.css">
+  <link rel="icon" href="images/logo/ohmyfood.ico">
   <title>Le délice des sens - ohmyfood</title>
-  <link rel="icon" href="images/logo/ohmyfood.ico" />
-  <link rel="stylesheet" href="styles/styles1.css" />
   <script src="https://kit.fontawesome.com/2897f175fe.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,22 +14,28 @@
 
   <div class="main">
 
+    <!--  HEADER  -->
+
     <header>
+      <div class="bouton_retour">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
       <div class="header">
-        <a class="bouton_retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
-        <img class="header_logo" src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
+        <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
       </div>
     </header>
 
+    <!--  RESTAURANT  -->
+
     <section>
       <div class="presentation_restaurant">
-        <img class="photo" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="Le délice des sens" />
+        <img class="photo" src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
         <div class="presentation_menu">
           <div class="restaurant">
             <h1>Le délice des sens</h1>
             <div class="coeur">
-              <span class="notLiked far fa-heart"></span>
+              <span><i class="fas fa-heart"></i></span>
+              <span><i class="far fa-heart"></i></span>
             </div>
           </div>
           <div class="menu">
@@ -37,22 +43,28 @@
               <h3 class="titre">ENTRÉES</h3>
               <div class="bordure_verte"></div>
               <div class="carte">
-                <div class="description">
-                  <p class="nom">Tartare de thon</p>
-                  <span class="details">Assaisonné au yuzu</span>
-                  <span class="prix">25€</span>
+                <div class="apparition0 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Tartare de thon</h4>
+                    <p class="details">Assaisonné au yuzu</p>
+                  </div class="nom_details">
+                  <div class="prix"><strong>25€</strong></div>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Bouchée de homard croustillant</p>
-                  <span class="details">Et sa farandole de petits légumes</span>
-                  <span class="prix">35€</span>
+                <div class="apparition1 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Bouchée de homard croustillant</h4>
+                    <p class="details">Et sa farandole de petits légumes</p>
+                  </div>
+                  <span class="prix"><strong>35€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Velouté de cèpes</p>
-                  <span class="details">Aux truffes</span>
-                  <span class="prix">20€</span>
+                <div class="apparition2 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Velouté de cèpes</h4>
+                    <p class="details">Aux truffes</p>
+                  </div>
+                  <span class="prix"><strong>20€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i>
                   </span>
                 </div>
@@ -62,22 +74,28 @@
               <h3 class="titre">PLATS</h3>
               <div class="bordure_verte"></div>
               <div class="carte">
-                <div class="description">
-                  <p class="nom">Poulet rôti aux herbes de Provence</p>
-                  <span class="details">Et sa crème de truffe</span>
-                  <span class="prix">40€</span>
+                <div class="apparition3 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Poulet rôti aux herbes de Provence</h4>
+                    <p class="details">Et sa crème de truffe</p>
+                  </div>
+                  <span class="prix"><strong>40€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Langouste rôtie</p>
-                  <span class="details">Et ses légumes de saison</span>
-                  <span class="prix">35€</span>
+                <div class="apparition4 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Langouste rôtie</h4>
+                    <p class="details">Et ses légumes de saison</p>
+                  </div>
+                  <span class="prix"><strong>35€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Côte de boeuf Angus</p>
-                  <span class="details">Et sa purée de panais</span>
-                  <span class="prix">44€</span>
+                <div class="apparition5 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Côte de boeuf Angus</h4>
+                    <p class="details">Et sa purée de panais</p>
+                  </div>
+                  <span class="prix"><strong>44€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
               </div>
@@ -86,33 +104,44 @@
               <h3 class="titre">DESSERTS</h3>
               <div class="bordure_verte"></div>
               <div class="carte">
-                <div class="description">
-                  <p class="nom">Farandole de desserts</p>
-                  <span class="details">Du chef</span>
-                  <span class="prix">18€</span>
+                <div class="apparition6 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Farandole de desserts</h4>
+                    <p class="details">Du chef</p>
+                  </div>
+                  <span class="prix"><strong>18€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
-                <div class="description">
-                  <p class="nom">Crème brulée</p>
-                  <span class="details">Revisitée</span>
-                  <span class="prix">22€</span>
-                  <span class="check"><i class="fas fa-check-circle"></i></span>
+                <div class="apparition7 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Crème brulée</h4>
+                    <p class="details">Revisitée</p>
+                  </div>
+                  <h4 class="prix"><strong>22€</strong></h4>
+                  <p class="check"><i class="fas fa-check-circle"></i></p>
                 </div>
-                <div class="description">
-                  <p class="nom">Tiramisu</p>
-                  <span class="details">À la noisette</span>
-                  <span class="prix">23€</span>
+                <div class="apparition8 description">
+                  <div class="nom_details">
+                    <h4 class="nom">Tiramisu</h4>
+                    <p class="details">À la noisette</p>
+                  </div>
+                  <span class="prix"><strong>23€</strong></span>
                   <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!--  BOUTON  COMMANDER  -->
+
         <div class="commander">
-          <span class="bouton_commander">Commander</span>
+          <button class="bouton_commander">Commander</button>
         </div>
       </div>
     </section>
+
+    <!--  FOOTER  -->
 
     <footer>
       <p>ohmyfood</p>
