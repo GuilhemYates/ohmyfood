@@ -1,10 +1,8 @@
 /*  DEFINITION DES POLICES  */
-
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 /*  BODY  */
-
 body {
     font-family: "Roboto", arial, serif;
     position: relative;
@@ -12,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 #bloc_page {
     margin: auto;
     width: 100%;
@@ -20,7 +17,6 @@ body {
 }
 
 /*  LOADING SPINNER  */
-
 #loaderBloc {
     position: absolute;
     z-index: 2;
@@ -32,7 +28,6 @@ body {
     animation-duration: 0.5s;
     animation-delay: 1s;
 }
-
 @keyframes opacity {
     from {
         opacity: 1;
@@ -42,7 +37,6 @@ body {
         z-index: -1;
     }
 }
-
 .loader {
     position: absolute;
     position: fixed;
@@ -56,7 +50,6 @@ body {
     background: linear-gradient(#9356dc, #ff79da);
     animation: animate 0.4s linear infinite;
 }
-
 .loader:after {
     content: "";
     position: absolute;
@@ -68,7 +61,6 @@ body {
     border: solid #ff79da 1px;
     border-radius: 50%;
 }
-
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -77,7 +69,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 .loader span {
     position: absolute;
     width: 100%;
@@ -85,15 +76,12 @@ body {
     border-radius: 50%;
     background: linear-gradient(#9356dc, #ff79da);
 }
-
 .loader span:nth-child(2) {
     filter: blur(10px);
 }
-
 .loader span:nth-child(4) {
     filter: blur(35px);
 }
-
 #loaderBloc img {
     position: absolute;
     position: fixed;
@@ -105,7 +93,6 @@ body {
     right: 33%;
     animation: pulse 2s forwards;
 }
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -116,7 +103,6 @@ body {
 }
 
 /*  HEADER  */
-
 header {
     position: relative;
     text-align: center;
@@ -125,38 +111,32 @@ header {
     padding-bottom: 10px;
     box-shadow: 0 5px 3px -3px #c1c1c1;
 }
-
 header img {
     width: 50%;
 }
 
 /*  LOCALISATION */
-
 #bloc_saisie {
     width: 100%;
     height: 50px;
     background-color: #e8e8e8;
 }
-
 .barre_recherche {
     display: flex;
     width: 250px;
     height: 100%;
     margin-left: 30%;
 }
-
 .barre_recherche form {
     display: flex;
     margin: 15px 0 15px 0;
 }
-
 .barre_recherche i {
     font-size: 100%;
     margin-right: 10px;
     color: #353535;
     opacity: 90%;
 }
-
 .barre_recherche input {
     border: none;
     width: 150px;
@@ -164,11 +144,9 @@ header img {
     font-weight: 500;
     background-color: unset;
 }
-
 input:focus {
     outline: none;
 }
-
 input::placeholder {
     font-family: "Roboto", arial, serif;
     color: #353535;
@@ -176,25 +154,21 @@ input::placeholder {
 }
 
 /*  BANIERE  */
-
 #baniere {
     text-align: center;
     padding: 25px 15px 50px 10px;
 }
-
 #baniere h1 {
     font-size: 150%;
     font-weight: 900;
     margin: 10px 50px 10px 50px;
 }
-
 #baniere p {
     width: 350px;
     font-size: 110%;
     font-weight: 300;
     margin: 0 auto 35px auto;
 }
-
 .bouton {
     font-family: "Roboto", arial, serif;
     font-size: 95%;
@@ -211,30 +185,25 @@ input::placeholder {
     box-shadow: 3px 3px 5px #c1c1c1;
     transition: 0.2s ease-in-out;
 }
-
 .bouton:hover {
     opacity: 0.7;
     box-shadow: 3px 3px 5px #808080;
 }
 
 /*  FONCTIONNENMENT  */
-
 #fonctionnement {
     margin: 20px 20px 80px 20px;
 }
-
 #fonctionnement h1 {
     margin-bottom: 30px;
     font-size: 150%;
     font-weight: 900;
 }
-
 .fonctionnement_encarts {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
-
 .fonctionnement_encart {
     position: relative;
     display: flex;
@@ -246,15 +215,12 @@ input::placeholder {
     margin-bottom: 25px;
     font-weight: 700;
 }
-
 .fonctionnement_encart a {
     text-decoration: none;
 }
-
 .fonctionnement_encart i:hover {
     color: #9356dc;
 }
-
 .fonctionnement_numero {
     position: absolute;
     left: -10px;
@@ -265,43 +231,36 @@ input::placeholder {
     padding: 4px 8px 4px 8px;
     font-size: 13px;
 }
-
 .fonctionnement_logo {
     color: grey;
     padding-top: 5px;
     margin: 0 20px 0 40px;
 }
-
 .fonctionnement_logo i {
     width: 20px;
     font-size: 120%;
 }
-
 .fonctionnement_text {
     color: black;
 }
 
 /*  RESTAURANTS  */
-
 #restaurants {
     width: auto;
     height: 100%;
     padding: 10px 20px 40px 20px;
     margin-bottom: 25px;
 }
-
 #restaurants h1 {
     margin-bottom: 5px;
     font-weight: 900;
 }
-
 .restaurants_encarts {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .restaurant_encart {
     position: relative;
     width: 100%;
@@ -310,29 +269,24 @@ input::placeholder {
     border-radius: 15px;
     box-shadow: 3px 3px 5px #c1c1c1;
 }
-
 .restaurant {
     text-decoration: none;
     color: black;
 }
-
 .restaurants_encarts img {
     object-fit: cover;
     width: 100%;
     height: 175px;
     border-radius: 15px 15px 0 0;
 }
-
 .photo_restaurant1,
 .photo_restaurant3,
 .photo_restaurant4 {
     object-position: bottom;
 }
-
 .photo_restaurant2 {
     object-position: 50% 61%;
 }
-
 .nouveau {
     position: absolute;
     top: 13px;
@@ -343,7 +297,6 @@ input::placeholder {
     padding: 5px 10px 5px 10px;
     border-radius: 3px;
 }
-
 .restaurant_description {
     display: flex;
     flex-direction: column;
@@ -351,45 +304,37 @@ input::placeholder {
     font-weight: 500;
     padding: 15px;
 }
-
 .restaurant_nom {
     font-weight: 500;
 }
-
 .restaurant_detail {
     font-size: 95%;
     font-weight: 300;
     margin-top: 3px;
 }
-
 .coeur i {
     position: absolute;
     font-size: 150%;
     top: 200px;
     right: 20px;
 }
-
 i.fas.fa-heart {
     display: none;
     background: linear-gradient(to bottom, #9356dc, #ff79da);
     -webkit-background-clip: text;
     color: transparent;
 }
-
 .coeur:hover i.fa-heart {
     display: none;
 }
-
 .coeur:hover i.fas.fa-heart {
     display: block;
 }
-
 i.fa-heart:hover {
     cursor: pointer;
 }
 
 /*  FOOTER  */
-
 footer {
     display: flex;
     flex-direction: column;
@@ -397,96 +342,78 @@ footer {
     color: white;
     padding: 0 25px 35px 25px;
 }
-
 footer p {
     font-family: Shrikhand;
     font-size: 110%;
 }
-
 footer span {
     font-size: 95%;
     margin-bottom: 8px;
 }
-
 footer i {
     margin-right: 10px;
     width: 15px;
 }
-
 footer a {
     text-decoration: none;
     color: white;
 }
 
 /*  VERSION TEBLETTE  */
-
 @media all and (min-width: 768px) and (max-width: 992px) {
     /*  LOCALISATION  */
-
     .barre_recherche {
         margin-left: 40%;
     }
 
     /*  BANIERE  */
-
     #baniere {
         padding: 25px 15px 20px 10px;
     }
 
     /*  FONCTIONNENMENT  */
-
-    #fonctionnement {
-        margin: 0 20px 20px 20px;
-    }
-
     .fonctionnement_encarts {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-
     .fonctionnement_encart {
         width: 40%;
     }
 
     /*  RESTAURANTS  */
-
     .restaurants_encarts {
         flex-direction: row;
     }
-
     .restaurant_encart {
         width: 48.5%;
     }
 }
 
 /*  VERSION DESKTOP  */
-
 @media all and (min-width: 993px) {
     /*  HEADER  */
-
     header img {
-        width: 40%;
+        width: 15%;
     }
 
     /*  LOCALISATION  */
-
     .barre_recherche {
         margin-left: 46%;
     }
-
-    /*  FONCTIONNENMENT  */
-
-    #fonctionnement {
-        margin: 0 20px 20px 20px;
+    .bouton {
+        margin-bottom: 10px;
     }
 
+    /*  FONCTIONNENMENT  */
+    #fonctionnement {
+        margin: 0 20px 0 20px;
+    }
     .fonctionnement_encarts {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     .fonctionnement_encart {
         width: 30%;
     }
@@ -496,8 +423,16 @@ footer a {
     .restaurants_encarts {
         flex-direction: row;
     }
-
     .restaurant_encart {
         width: 24%;
+    }
+    .photo_restaurant1 {
+        object-position: center;
+    }
+    .photo_restaurant3 {
+        object-position: 50% 90%;
+    }
+    .photo_restaurant4 {
+        object-position: 50% 85%;
     }
 }

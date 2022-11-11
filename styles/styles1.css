@@ -1,10 +1,8 @@
 /*  DEFINITION DES POLICES  */
-
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 /*  BODY  */
-
 body {
     font-family: "Roboto", arial, serif;
     width: auto;
@@ -14,36 +12,30 @@ body {
 }
 
 /*  HEADER  */
-
 header {
     width: 100%;
     display: flex;
 }
-
 .bouton_retour {
     position: absolute;
     z-index: 2;
     display: flex;
 }
-
 .bouton_retour a {
     font-size: 140%;
     margin-top: 22px;
     margin-left: 25px;
     color: black;
 }
-
 .header {
     margin: 20px auto 10px auto;
 }
 
 /*  RESTAURANT  */
-
 .presentation_restaurant {
     display: flex;
     flex-direction: column;
 }
-
 .photo {
     position: absolute;
     z-index: 0;
@@ -52,36 +44,38 @@ header {
     height: 240px;
     object-position: top;
 }
-
 .presentation_menu {
     position: relative;
     z-index: 1;
     border-radius: 45px 45px 0 0;
     background-color: white;
     margin-top: 200px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 0 20px;
 }
-
+.restaurant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-family: Shrikhand;
+    font-size: 170%;
+}
 .coeur {
     display: flex;
     justify-content: flex-end;
-    font-size: 100%;
+    font-size: 150%;
     margin: 8px 0 8px 0;
 }
-
 .coeur:hover i.fa-heart {
     display: none;
 }
 .coeur:hover i.fas.fa-heart {
     display: block;
 }
-
 i.fa-heart:hover {
     cursor: pointer;
 }
-
 i.fas.fa-heart {
     display: none;
     background: linear-gradient(to bottom, #9356dc, #ff79da);
@@ -89,52 +83,33 @@ i.fas.fa-heart {
     color: transparent;
     font-size: 100%;
 }
-
 .presentation_carte {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
-.restaurant {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-h1 {
-    font-family: Shrikhand;
-    font-size: 170%;
-}
-
-.coeur {
-    font-size: 170%;
-}
-
 .titre {
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 8px;
     font-size: 110%;
     font-weight: 400;
+    padding-bottom: 8px;
     margin-bottom: 5px;
 }
-
 .bordure_verte {
     width: 38px;
-    border: solid 1px #99e2d0;
+    border: 1px solid #99e2d0;
     margin: 0 0 5px 0;
 }
-
 .description {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15px 0 15px 0;
-    border-radius: 15px;
     width: 100%;
     height: 70px;
+    margin: 15px 0 15px 0;
+    border-radius: 15px;
     box-shadow: 3px 3px 5px #c1c1c1;
     cursor: pointer;
     animation: apparition 0.6s;
@@ -143,7 +118,6 @@ h1 {
     transform: scale(0);
     max-width: 100%;
 }
-
 @keyframes apparition {
     0% {
         transform: scale(0);
@@ -152,7 +126,6 @@ h1 {
         transform: scale(1);
     }
 }
-
 .apparition0 {
     animation-delay: 0s;
 }
@@ -183,58 +156,50 @@ h1 {
 .apparition9 {
     animation-delay: 0.9s;
 }
-
 .nom_details {
     padding: 5px 3px;
     overflow: hidden;
     width: 87%;
     transition: 0.4s cubic-bezier(0.18, 0.65, 0.68, 0.92);
 }
-
 .description:hover .nom_details {
     width: 60%;
 }
-
 .nom,
 .details {
-    margin: 8px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin: 8px;
 }
-
 .prix {
+    position: absolute;
+    right: 3%;
     padding: 35px 0 10px 0;
     margin-right: 0;
     margin-left: 5px;
-    position: absolute;
-    right: 3%;
     transition: 0.4s cubic-bezier(0, 0.92, 0.7, 1);
 }
-
 .description:hover .prix {
-    translate: -250%;
+    transform: translate(-250%);
 }
-
 .check {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #99e2d0;
-    width: 0%;
+    right: 0;
+    width: 0;
     height: 100%;
     margin: 0;
     border-radius: 0 15px 15px 0;
-    position: absolute;
-    right: 0;
     overflow: hidden;
     transition: 0.4s cubic-bezier(0, 0.92, 0.7, 1);
 }
-
 .description:hover .check {
     width: 20%;
 }
-
 .check i {
     color: white;
     background-color: #99e2d0;
@@ -242,43 +207,38 @@ h1 {
     border-radius: 100%;
     padding: 5px 5px 3px 5px;
     transition: 0.35s cubic-bezier(0, 0.92, 0.7, 1);
-    rotate: 180deg;
+    transform: rotate(-180deg);
 }
-
 .description:hover .check i {
-    rotate: initial;
+    transform: rotate(-1turn);
 }
 
 /*  BOUTON COMMANDER  */
-
 .commander {
     text-align: center;
     padding-top: 40px;
     margin-bottom: 50px;
 }
-
 .bouton_commander {
     border: none;
-    background: linear-gradient(#ff79da, #9356dc);
-    border-radius: 30px;
-    padding: 15px 20px 15px 20px;
-    box-shadow: 3px 3px 5px #c1c1c1;
-    color: white;
     text-decoration: none;
-    cursor: pointer;
     width: 180px;
     height: 50px;
+    border-radius: 30px;
+    padding: 15px 20px 15px 20px;
+    color: white;
     font-size: 100%;
+    box-shadow: 3px 3px 5px #c1c1c1;
+    background: linear-gradient(#ff79da, #9356dc);
+    cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-
 .bouton_commander:hover {
     opacity: 0.7;
     box-shadow: 3px 3px 5px #808080;
 }
 
 /*  FOOTER  */
-
 footer {
     display: flex;
     flex-direction: column;
@@ -286,54 +246,64 @@ footer {
     color: white;
     padding: 0 25px 35px 25px;
 }
-
 footer p {
     font-family: Shrikhand;
     font-size: 150%;
 }
-
 footer span {
     margin-bottom: 5px;
 }
-
 footer i {
     margin-right: 15px;
     width: 15px;
 }
-
 footer a {
     text-decoration: none;
     color: white;
 }
 
 /*  VERSION TEBLETTE  */
-
 @media all and (min-width: 768px) and (max-width: 992px) {
     .photo {
         object-position: center;
     }
-
     .description:hover .check {
         width: 10%;
     }
 }
 
 /*  VERSION DESKTOP  */
-
 @media all and (min-width: 993px) {
+    .header {
+        margin: 30px auto 10px auto;
+    }
+    .logo {
+        width: 285px;
+    }
+    .bouton_retour a {
+        font-size: 170%;
+        margin-top: 35px;
+        margin-left: 35px;
+    }
     .photo {
         object-position: center;
+    }
+    .restaurant h1 {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1%;
     }
     .presentation_carte {
         width: 30%;
     }
-
     .menu {
         display: flex;
         justify-content: space-between;
     }
-
     .description:hover .check {
         width: 13%;
+    }
+    .commander {
+        margin-bottom: 120px;
     }
 }
