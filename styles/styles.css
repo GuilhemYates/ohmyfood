@@ -210,12 +210,13 @@ input::placeholder {
     box-shadow: 3px 3px 5px #c1c1c1;
     margin-bottom: 25px;
     font-weight: 700;
+    transition: 0.2s ease-in-out;
 }
-.fonctionnement_encart a {
+.fonctionnement_encarts a {
     text-decoration: none;
 }
-.fonctionnement_encart i:hover {
-    color: #9356dc;
+.fonctionnement_encart:hover {
+    background-color: #f5f5f5;
 }
 .fonctionnement_numero {
     position: absolute;
@@ -231,6 +232,10 @@ input::placeholder {
     color: grey;
     padding-top: 5px;
     margin: 0 20px 0 40px;
+    transition: 0.2s ease-in-out;
+}
+.fonctionnement_encart:hover .fonctionnement_logo {
+    color: #9356dc;
 }
 .fonctionnement_logo i {
     width: 20px;
@@ -320,14 +325,14 @@ i.fas.fa-heart {
     -webkit-background-clip: text;
     color: transparent;
 }
+i.fa-heart:hover {
+    cursor: pointer;
+}
 .coeur:hover i.fa-heart {
     display: none;
 }
 .coeur:hover i.fas.fa-heart {
     display: block;
-}
-i.fa-heart:hover {
-    cursor: pointer;
 }
 
 /*  FOOTER  */
