@@ -216,7 +216,7 @@ input::placeholder {
     text-decoration: none;
 }
 .fonctionnement_encart:hover {
-    background-color: #f5f5f5;
+    background-color: #f5edff;
 }
 .fonctionnement_numero {
     position: absolute;
