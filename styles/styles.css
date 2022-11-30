@@ -154,12 +154,12 @@ input::placeholder {
     text-align: center;
     padding: 25px 15px 50px 10px;
 }
-#baniere h1 {
+.baniere_titre {
     font-size: 150%;
     font-weight: 900;
     margin: 10px 50px 10px 50px;
 }
-#baniere p {
+.baniere_description {
     width: 350px;
     font-size: 110%;
     font-weight: 300;
@@ -306,7 +306,7 @@ input::placeholder {
     padding: 15px;
 }
 .restaurant_nom {
-    font-weight: 500;
+    font-weight: 600;
 }
 .restaurant_detail {
     font-size: 95%;

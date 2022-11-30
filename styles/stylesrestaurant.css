@@ -53,7 +53,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-h1 {
+h2 {
     font-family: Shrikhand;
     font-size: 170%;
 }
@@ -160,6 +160,9 @@ i.fas.fa-heart {
 }
 .description:hover .nom_details {
     width: 60%;
+}
+.nom {
+    font-weight: 600;
 }
 .nom,
 .details {
@@ -284,7 +287,7 @@ footer a {
     .photo {
         object-position: center;
     }
-    .restaurant h1 {
+    .restaurant h2 {
         margin-left: auto;
         margin-right: auto;
         padding-left: 1%;
